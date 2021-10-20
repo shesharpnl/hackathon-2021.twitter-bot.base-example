@@ -92,6 +92,24 @@ As the goal of our Bot is to **update twitter status after an amount of time**, 
 
 So based on that GHA fits perfectly 🚀
 
+# How do I create a GitHub Action workflow? And how do I schedule it to run by time?
+
+Github Actions enables you to create custom software development lifecycle workflows directly in your Github repository. These workflows are made out of different tasks so-called actions that can be run automatically on certain events.
+
+This enables you to include Continues Integration (CI) and continuous deployment (CD) capabilities and many other features directly in your repository.
+
+To start your first **Workflow** you first need to create a directory on the root of your project called **".github"** . Then inside of this directory you create another one called **"workflows"**. These second folder will hold all the workflows of your application! 
+
+Notice that this folders are not only a matter of **organizing** your repo, but is also the **"syntax"** of github actions. The folders needs to have this exact name and this hierarchy so github can read it 🤖.
+
+Then, inside of your workflows folder, you can create your <insert_here_workflow_name>.yml file. The name of the workflow is up to you! The best practice is to name it as it represents or on when it is triggered. For example, on this repo I called it "every-one-hour.yml"... So then without even opening the file you already know that "something is done by this workflow every one hour".
+
+Now inside the file we have **default key words** that are used to define our workflow for that I would recomend you to read (this article about Github actions)[https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8] or/and (this other article about Github actions)[https://gabrieltanner.org/blog/an-introduction-to-github-actions] 📚 They are not very long, but it explains how the file works and its core key words 😉.
+
+After this, you might understand the workflow implemented on this example 🎉
+
+If you still wonder how our event trigger works on the workflow file I recomend you to check [this part of the docs](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows#schedule) 😉 and for deeply understanding on the subject you can check the [GitHub documentation](https://docs.github.com/en/actions)
+
 ## Notes:
 
 1. This approach will not work with "reaction actions" as if you want your Bot to react in interactions made to it. Thats because to do so your Bot script needs to be running all the time to be able to listen to this actions and this approach **we trigger the bot once in a while**, if you would like your bot to be more **interactive** you need to place it up and running in a server
