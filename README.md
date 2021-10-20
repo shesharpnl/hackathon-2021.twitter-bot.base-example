@@ -104,7 +104,7 @@ Notice that this folders are not only a matter of **organizing** your repo, but 
 
 Then, inside of your workflows folder, you can create your <insert_here_workflow_name>.yml file. The name of the workflow is up to you! The best practice is to name it as it represents or on when it is triggered. For example, on this repo I called it "every-one-hour.yml"... So then without even opening the file you already know that "something is done by this workflow every one hour".
 
-Now inside the file we have **default key words** that are used to define our workflow for that I would recomend you to read (this article about Github actions)[https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8] or/and (this other article about Github actions)[https://gabrieltanner.org/blog/an-introduction-to-github-actions] 📚 They are not very long, but it explains how the file works and its core key words 😉.
+Now inside the file we have **default key words** that are used to define our workflow for that I would recomend you to read [this article about Github actions](https://medium.com/intelligentmachines/github-actions-basics-40a4d9b417f8) or/and [this other article about Github actions](https://gabrieltanner.org/blog/an-introduction-to-github-actions) 📚 They are not very long, but it explains how the file works and its core key words 😉.
 
 After this, you might understand the workflow implemented on this example 🎉
 
