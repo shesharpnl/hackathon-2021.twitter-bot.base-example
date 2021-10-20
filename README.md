@@ -78,7 +78,7 @@ TWITTER_ACCESS_TOKEN_SECRET=
 
 # How to create a Twitter bot script?
 
-We have different ways to creating a slackbot! Literally tones of libraries around the internet that might help you out on this 😉
+We have different ways to creating a twitter bot! Literally tones of libraries around the internet that might help you out on this 😉
 
 On this example we are using "twitter-api-client" library, which is a easy and quick way to have your Bot up and running with a few lines of code as it has tones of functions available for each action you would like to execute on your Twitter. 
 
